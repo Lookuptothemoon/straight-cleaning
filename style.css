@@ -130,12 +130,12 @@ body {
     border-radius: 15px;
     padding: 10px;
     margin-top: 25px;
+    text-decoration: none;
 }
 #modal-btn:hover, #modal-btn:focus {
     background-color: white;
     color: black;
     cursor: pointer;
-    text-decoration: none;
 }
 
 #menu {

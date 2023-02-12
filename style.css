@@ -161,6 +161,23 @@ body {
 /* darker: 92	79	68	 */
 
 
+@media only screen and (max-width: 600px) {
+    .main-title {
+        font-size: 50px;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+    .item-title {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .price {
+        font-size: 15px;
+    }
+}
 
 
 
@@ -189,9 +206,7 @@ body {
 
 
 
-
-
-#container {
+/* #container {
     height: 500px;
     width: 100%;
 }
@@ -217,4 +232,4 @@ body {
     top:50%;
     background:url(http://benspopshop.com/cloud/dark-linen-desktop.png) 0 -100%;
     background-size:100% 200%;
-}
+} */

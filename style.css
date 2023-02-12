@@ -1,0 +1,214 @@
+* {
+    margin: 0 auto;
+}
+body {
+    background-color: rgb(122, 104, 90);
+    padding: 30px 0 30px 0;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+}
+.item-title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+.text {
+    font-size: 20px;
+}
+.price {
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-title {
+    text-align: left;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-right: 10px;
+    color: black;
+}
+.horizontal-line {
+    flex: 1;
+    height: 5px;
+    background-color: black;
+}
+
+.main-item, .closet-reorg-item, .sides-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+.main-item-info, .main-item-reg-price, .main-item-rough-price {
+    flex-grow: 1;
+    width: 33%;
+}
+.closet-reorg-name, .closet-reorg-price, .sides-item-name, .sides-item-price {
+    flex-grow: 1;
+    width: 50%;
+}
+.main-item-reg-price, .main-item-rough-price {
+    text-align: right;
+}
+.sidenote {
+    font-style: italic;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    min-width: 10%;
+    max-width: 50%;
+}
+
+#modal-container {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,1);
+}
+#modal {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    min-width: 250px;
+    border-radius: 10px;
+}
+#modal-close {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#modal-close:hover, .modal-close:focus {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#modal-number {}
+#modal_email {}
+#modal-btn-container {
+    display: flex;
+    justify-content: center;
+}
+#modal-btn {
+    background: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 25px;
+}
+#modal-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#menu {
+    max-width: 1500px;
+    border-radius: 5px;
+    padding: 0 20px 0 20px;
+}
+
+#menu-title-submessage {
+    text-align: center;
+    font-size: 20px;
+}
+#main, #closet-reorg, #sides {
+    margin: 30px 0 30px 0;
+}
+
+/* lighter: 122	104	90	 */
+/* darker: 92	79	68	 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container {
+    height: 500px;
+    width: 100%;
+}
+#working{
+    height:100%;
+    outline:1px dashed red;
+    background-color:#333;  
+    background: linear-gradient(10deg,rgba(63,67,75,.3),rgba(63,67,75,.1) 50%, transparent 51%, transparent 100%),
+    linear-gradient(15deg,rgba(63,67,75,.3),rgba(63,67,75,.1) 50%, transparent 51%, transparent 100%), 
+    linear-gradient(-10deg,rgba(63,67,75,.3),rgba(63,67,75,.1) 50%, transparent 51%, transparent 100%),
+    linear-gradient(-5deg,rgba(63,67,75,.3),rgba(63,67,75,.2) 50%, transparent 51%, transparent 100%),
+    linear-gradient(10deg,rgba(63,67,75,.3),rgba(63,67,75,.2) 50%, transparent 51%, transparent 100%),
+    linear-gradient(15deg,rgba(63,67,75,.1),rgba(63,67,75,.3) 50%, transparent 51%, transparent 100%),
+    linear-gradient(-9deg,rgba(63,67,75,.3),rgba(63,67,75,.1) 50%, transparent 51%, transparent 100%),
+    linear-gradient(10deg,rgba(63,67,75,.1),rgba(63,67,75,.4) 50%, transparent 51%, transparent 100%),
+    rgba(43,47,55,1);
+    background-size:53px, 37px,43px, 13px, 23px,17px,29px,27px,100%;
+}
+#model{
+    height:50%;
+    position:relative;
+    outline:1px dashed green;
+    top:50%;
+    background:url(http://benspopshop.com/cloud/dark-linen-desktop.png) 0 -100%;
+    background-size:100% 200%;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Straight Cleaning</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Straight Cleaning Services">
+	<meta name="keywords" content="cleaning, flyer, home, service">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->   
+	<link href="content/favicon.ico" rel="shortcut icon"/>
+
+	<!-- CSS/JS -->
+	<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <img id="logo" src="content/logo.PNG"/>
+
+    <div id="modal-container">
+        <div id="modal">
+            <img id="logo" src="content/logo.PNG"/>
+            <div id="modal-number">646-234-4369</div>
+            <div id="modal-email">straighteaningllc@gmail.com</div>
+            <button id="modal-close">SEE MENU</button>
+        </div>
+    </div>
+    
+    <div id="menu">
+        <div id="menu-title">
+            <p class="main-title">Menú</p>
+            <p id="menu-title-submessage">(Prices are starting prices and are subject to change)</p>
+        </div>
+        
+        <div id="modal-btn-container">
+            <button id="modal-btn">CONTACT INFO</button>
+        </div>
+
+        <div id="main">
+            <div class="section">
+                <p class="section-title">MAIN</p>
+                <div class="horizontal-line"></div>
+            </div>
+
+            <div class="main-item">
+                <div class="main-item-info"></div>
+                <p class="main-item-reg-price item-title">Regular</p>
+                <p class="main-item-rough-price item-title">We Like It Rough<br>(Deep Cleaning)</p>
+            </div>
+
+            <div class="main-item">
+                <div class="main-item-info">
+                    <p class="main-item-info-name item-title">One Hitter</p>
+                    <p class="main-item-info-decr text">one bedroom one bathroom</p>
+                </div>
+                <p class="main-item-reg-price price">180 USD</p>
+                <p class="main-item-rough-price price">250 USD</p>
+            </div>
+
+            <div class="main-item">
+                <div class="main-item-info">
+                    <p class="main-item-info-name item-title">Bang Bang</p>
+                    <p class="main-item-info-decr text">two bedroom one bathroom</p>
+                </div>
+                <p class="main-item-reg-price price">280 USD</p>
+                <p class="main-item-rough-price price">365 USD</p>
+            </div>
+
+            <div class="main-item">
+                <div class="main-item-info">
+                    <p class="main-item-info-name item-title">Bang Bang Bang</p>
+                    <p class="main-item-info-decr text">three bedroom one bathroom</p>
+                </div>
+                <p class="main-item-reg-price price">330 USD</p>
+                <p class="main-item-rough-price price">*MP</p>
+            </div>
+
+            <p class="sidenote">*MP = Market Price</p>
+            <p class="sidenote">Note: Anything bigger is to be discussed</p>
+        </div>
+
+        <div id="closet-reorg">
+            <div class="section">
+                <div class="section-title">CLOSET REORGANIZATION</div>
+                <div class="horizontal-line"></div>
+            </div>
+
+            <div class="closet-reorg-item">
+                <div class="closet-reorg-name item-title">Small</div>
+                <div class="closet-reorg-price price">25 USD</div>
+            </div>
+
+            <div class="closet-reorg-item">
+                <div class="closet-reorg-name item-title">Medium</div>
+                <div class="closet-reorg-price price">50 USD</div>
+            </div>
+
+            <div class="closet-reorg-item">
+                <div class="closet-reorg-name item-title">Large</div>
+                <div class="closet-reorg-price price">75-100 USD</div>
+            </div>
+
+            <div class="closet-reorg-item">
+                <div class="closet-reorg-name item-title">XL+</div>
+                <div class="closet-reorg-price price">TBD</div>
+            </div>
+        </div>
+
+        <div id="sides">
+            <div class="section">
+                <p class="section-title">SIDES</p>
+                <div class="horizontal-line"></div>
+            </div>
+
+            <div class="sides-item">
+                <div class="sides-item-name item-title">+ Bathroom</div>
+                <div class="sides-item-price price">15 USD</div>
+            </div>
+
+            <div class="sides-item">
+                <div class="sides-item-name item-title">+ Office</div>
+                <div class="sides-item-price price">10 USD</div>
+            </div>
+
+            <div class="sides-item">
+                <div class="sides-item-name item-title">+ 1 Load of laundry (we get stains out)</div>
+                <div class="sides-item-price price">5 USD</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("modal-container");
+        var modalBtn = document.getElementById("modal-btn");
+        var closeBtn = document.getElementById("modal-close");
+
+        modalBtn.onclick = function(event) {
+            modal.style.display = "block";
+        }
+
+        closeBtn.onclick = function(event) {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.getElementById("modal-number").onclick = function() {
+            alert("clicked modal-number");
+        }
+    </script>
+</body>
+</html>
